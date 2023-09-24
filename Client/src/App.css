@@ -166,7 +166,7 @@ html {
 }
 .no-fav-container {
     border-radius: 10px;
-    box-shadow: 0 0 6px -1px red;
+    box-shadow: 0 0 6px -1px #03356b;
     width: 50%;
     position: relative;
     transform: translateX(50%);

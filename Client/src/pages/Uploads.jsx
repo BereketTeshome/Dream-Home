@@ -3,12 +3,13 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import axios from 'axios'
 import Loading from '../components/Loading';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Heart from '../components/Heart';
 import { ToastContainer } from 'react-toastify';
 import Search from '../components/Search';
 import jwt from 'jwt-decode'
 import EditProperty from '../components/EditProperty';
+import no_fav from '../assets/no-fav.png'
 
 const Uploads = () => {
   const [estate, setEstate] = useState([])
@@ -17,6 +18,7 @@ const Uploads = () => {
   const userId = token && jwt(token).userID
   const filteredData = estate.filter((item) => item.createdBy == userId)
   const [modalOpened, setModalOpened] = useState(false)
+  const navigate = useNavigate()
 
   useEffect(() => {
     const fetchData = async () =>{
@@ -76,6 +78,15 @@ const Uploads = () => {
             )
           })}
         {loading && <Loading />}
+
+        <div className='no-fav-container'>
+          {filteredData.length === 0  && <div>
+            <img src={no_fav} alt="no fav" />
+            <h2>You don't have any uploaded property</h2>
+            <button onClick={()=> {navigate(-1)}}>Go Back</button>
+          </div>}
+        </div>
+
       </div>
       </div>
       
