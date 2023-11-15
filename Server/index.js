@@ -11,6 +11,10 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (req, res)=>{
+    res.setHeader("Access-Control-Allow-Credentials", "true")
+})
+
 //routes
 app.use('/user', userRouter)
 app.use('/estate', estateRouter)
