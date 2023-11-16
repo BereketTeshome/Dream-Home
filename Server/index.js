@@ -5,7 +5,6 @@ const app = express()
 const userRouter = require('./Routes/routes')
 const estateRouter = require('./Routes/estateRouter')
 const cors = require('cors');
-// const auth = require('./Middleware/Authentication')
 
 //middleware
 app.use(express.json());
