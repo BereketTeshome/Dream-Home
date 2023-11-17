@@ -413,6 +413,7 @@ html {
     left: 34%;
     border-radius: 10px;
 }
+
 .create-job-container input,
 .register-container input {
     width: 100%;
@@ -1048,10 +1049,7 @@ footer .wave#wave4 {
     .home-container form {
         width: 95%;
     }
-    .home-container button {
-        width: 30px;
-        height: 30px;
-    }
+
     .home-container input {
         padding: 5px 0;
         font-size: 12px;

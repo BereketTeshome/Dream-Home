@@ -6,7 +6,7 @@ const Search = () => {
     <div className='home-container'>
         <form action="/search" method='GET' style={{boxShadow:'0px 0px 4px 1px #4161DF',position:'relative', top:'-70px', marginBottom:'50px'}}>
         <input type="search" name='searchTerm' placeholder='Search by Title/City/Country/Address' />
-        <button type='submit'><AiOutlineSearch style={{position:'relative', top:'3.5px', left:'1px', color:'#fff', scale:'1.3', minWidth:'15px'}}/></button>
+        <button type='submit'><AiOutlineSearch style={{position:'relative', top:'3.5px', left:'1px', color:'#fff', scale:'1.3', minWidth:'30px', minHeight: '30px'}}/></button>
         </form>
     </div>
   )
