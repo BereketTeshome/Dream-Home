@@ -117,7 +117,7 @@ html {
     height: 40px;
     background: #2c4dce;
     cursor: pointer;
-    color: #011e3d;
+    color: #fff;
 }
 .awards-container {
     display: flex;
@@ -905,10 +905,6 @@ footer .wave#wave4 {
     .properties-container {
         justify-content: space-evenly;
     }
-    .home-container button {
-        width: 30px;
-        height: 30px;
-    }
 }
 @media screen and (max-width: 750px) {
     .popular-container {
@@ -922,6 +918,16 @@ footer .wave#wave4 {
     }
     .home-container form {
         width: 80%;
+        overflow: hidden;
+    }
+    .home-container button {
+        border: 0;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background: none;
+        cursor: pointer;
+        color: #777;
     }
     .section-imgs img:last-child {
         display: none;
@@ -1053,7 +1059,10 @@ footer .wave#wave4 {
     .home-container form {
         width: 95%;
     }
-
+    .home-container button {
+        width: 30px;
+        height: 30px;
+    }
     .home-container input {
         padding: 5px 0;
         font-size: 12px;
