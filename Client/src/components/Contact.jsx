@@ -37,7 +37,7 @@ const Contact = () => {
             </div>
             <div>    
               <b style={{color:'#1F3E72'}}>Mail</b> <br />
-              <p>bereketteshome <br /> 685@gmail</p>
+              <p>bereketteshome685@gmail</p>
             </div>
           </div>
 

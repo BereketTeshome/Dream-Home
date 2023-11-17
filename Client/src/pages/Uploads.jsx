@@ -77,15 +77,14 @@ const Uploads = () => {
               </div>
             )
           })}
-        {loading && <Loading />}
 
-        <div className='no-fav-container'>
-          {filteredData.length === 0  && <div>
+        {filteredData.length === 0  &&<div className='no-fav-container'>
+           <div>
             <img src={no_fav} alt="no fav" />
             <h2>You haven't uploaded any property yet.</h2>
             <button onClick={()=> {navigate(-1)}}>Go Back</button>
-          </div>}
-        </div>
+          </div>
+        </div>}
 
       </div>
       </div>

@@ -167,9 +167,9 @@ html {
 .no-fav-container {
     border-radius: 10px;
     box-shadow: 0 0 6px -1px #03356b;
-    width: 50%;
+    width: 100%;
     position: relative;
-    transform: translateX(50%);
+    /* transform: translateX(50%); */
     color: #00008b;
     padding: 3%;
     line-height: 40px;
@@ -301,6 +301,7 @@ html {
     display: flex;
     align-items: center;
     gap: 20px;
+    overflow: hidden;
 }
 .contact-icon {
     border-radius: 5px;
