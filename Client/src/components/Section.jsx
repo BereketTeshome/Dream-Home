@@ -25,7 +25,7 @@ const Section = () => {
     const fetchData = async () =>{
       try {
         setLoading(true)
-        const res = await axios.get("http://localhost:3001/estate/getLimited")
+        const res = await axios.get("https://dream-home-seven.vercel.app/estate/getLimited")
         setEstate(res.data.estate)
         setLoading(false)
       } catch (error) {

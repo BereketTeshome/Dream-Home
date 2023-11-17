@@ -34,7 +34,7 @@ const Facilities = ({prevStep, propertyDetails, setPropertyDetails, setOpened, s
       }));
     }
     if (!saved) {
-      axios.post("http://localhost:3001/estate/create", propertyDetails)
+      axios.post("https://dream-home-seven.vercel.app/estate/create", propertyDetails)
       window.location.reload()
       navigate("/properties")
 

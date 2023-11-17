@@ -39,7 +39,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post("http://localhost:3001/user/register", formik.values)
+      const res = await axios.post("https://dream-home-seven.vercel.app/user/register", formik.values)
       cookies.set("token", res.data.token)
       navigate('/')
       setTimeout(()=> {

@@ -17,7 +17,7 @@ const Property = () => {
     const fetchData = async () =>{
       try {
         setLoading(true)
-        const res = await axios.get(`http://localhost:3001/estate/get/${location}`)
+        const res = await axios.get(`https://dream-home-seven.vercel.app/estate/get/${location}`)
         setEstate([res.data.estate])
         setLoading(false)
       } catch (error) {

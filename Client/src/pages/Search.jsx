@@ -19,7 +19,7 @@ const Search = () => {
     const fetchData = async() =>{
         setLoading(true)
         try {
-            const res = await axios.post(`http://localhost:3001/estate/search?searchTerm=${searchTerm}`)
+            const res = await axios.post(`https://dream-home-seven.vercel.app/estate/search?searchTerm=${searchTerm}`)
             setData(res.data.estate)
             setLoading(false)
         } catch (error) {

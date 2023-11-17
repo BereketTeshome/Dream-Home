@@ -36,7 +36,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post("http://localhost:3001/user/login", formik.values)
+      const res = await axios.post("https://dream-home-seven.vercel.app/user/login", formik.values)
       if (!res.data.error) {
         cookies.set("token", res.data.token)
         navigate('/')

@@ -34,7 +34,7 @@ const EditFacilities = ({prevStep, propertyDetails, setPropertyDetails, id}) => 
       }));
     }
     if (!saved) {
-      axios.put(`http://localhost:3001/estate/edit/${id}`, propertyDetails)
+      axios.put(`https://dream-home-seven.vercel.app/estate/edit/${id}`, propertyDetails)
       navigate("/properties")
 
       setTimeout(()=> {
