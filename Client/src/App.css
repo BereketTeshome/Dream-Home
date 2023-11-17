@@ -905,6 +905,10 @@ footer .wave#wave4 {
     .properties-container {
         justify-content: space-evenly;
     }
+    .home-container button {
+        width: 30px;
+        height: 30px;
+    }
 }
 @media screen and (max-width: 750px) {
     .popular-container {
